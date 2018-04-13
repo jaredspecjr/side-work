@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/jquery-3.3.1.js" type="text/javascript"></script>
+  <script src="js/scripts.js" type="text/javascript"></script>
+  <title></title>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="card card-background">
+      <form id="char-sheet" action="index.html" method="post">
+        <div class="row">
+          <div class="col-md-4">
+            <input id="playerName" type="text" name="playerName" placeholder="Player Name">
+          </div>
+          <div class="col-md-4">
+            <select id="race-select" name="">
+              <option value="human">Human</option>
+              <option value="elf">Elf</option>
+              <option value="dwarf">Dwarf</option>
+              <option value="halfling">Halfling</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <select id="class-select" placeholder="Choose a class">
+              <option value="rogue">Rogue</option>
+              <option value="fighter">Fighter</option>
+              <option value="wizard">Wizard</option>
+              <option value="ranger">Ranger</option>
+            </select>
+            <button type="submit" name="button" id="toHide">Confirm</button>
+          </div>
+        </div>
+      </form>
+      <br>
+      <div id="statConfirm">
+        <button type="button" name="statConfirm" >Confirm</button>
+        <p>Ability points left: <span id="attPoints"></span></p>
+       </div>
+      <div class="row">
+        <div class="col-md">
+          <div class="card stat-box">
+            <div class="card-title">
+              STR
+            </div>
+            <div class="row">
+              <div class="col-md">
+                <div class="row">
+                  <button class="points increase" type="button" name="button" value="strIncr">+</button>
+                </div>
+                <div class="row">
+                  <button class="points decrease" type="button" name="button" value="strDecr">-</button>
+                </div>
+              </div>
+              <div class="col-md">
+                <span id="attributePoints1"></span>
+              </div>
+            </div>
+          </div>
+          <div class="card stat-box">
+            <div class="card-title">
+              DEX
+            </div>
+            <div class="row">
+              <div class="col-md">
+                <div class="row">
+                  <button class="points increase" type="button" name="button" value="dexIncr">+</button>
+                </div>
+                <div class="row">
+                  <button class="points decrease" type="button" name="button" value="dexDecr">-</button>
+                </div>
+              </div>
+              <div class="col-md">
+                <span id="attributePoints2"></span>
+              </div>
+            </div>
+          </div>
+          <div class="card stat-box">
+            <div class="card-title">
+              CON
+            </div>
+            <div class="row">
+              <div class="col-md">
+                <div class="row">
+                  <button class="points increase" type="button" name="button" value="conIncr">+</button>
+                </div>
+                <div class="row">
+                  <button class="points decrease" type="button" name="button" value="conDecr">-</button>
+                </div>
+              </div>
+              <div class="col-md">
+                <span id="attributePoints3"></span>
+              </div>
+            </div>
+          </div>
+          <div class="card stat-box">
+            <div class="card-title">
+              INT
+            </div>
+            <div class="row">
+              <div class="col-md">
+                <div class="row">
+                  <button class="points increase" type="button" name="button" value="intIncr">+</button>
+                </div>
+                <div class="row">
+                  <button class="points decrease" type="button" name="button" value="intDecr">-</button>
+                </div>
+              </div>
+              <div class="col-md">
+                <span id="attributePoints4"></span>
+              </div>
+            </div>
+          </div>
+          <div class="card stat-box">
+            <div class="card-title">
+              WIS
+            </div>
+            <div class="row">
+              <div class="col-md">
+                <div class="row">
+                  <button class="points increase" type="button" name="button" value="wisIncr">+</button>
+                </div>
+                <div class="row">
+                  <button class="points decrease" type="button" name="button" value="wisDecr">-</button>
+                </div>
+              </div>
+              <div class="col-md">
+                <span id="attributePoints5"></span>
+              </div>
+            </div>
+          </div>
+          <div class="card stat-box">
+            <div class="card-title">
+              CHAR
+            </div>
+            <div class="row">
+              <div class="col-md">
+                <div class="row">
+                  <button class="points increase" type="button" name="button" value="ismaIncr">+</button>
+                </div>
+                <div class="row">
+                  <button class="points decrease" type="button" name="button" value="ismaDecr">-</button>
+                </div>
+              </div>
+              <div class="col-md">
+                <span id="attributePoints6"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="story">
+          <div id="humanLore">
+            <img src="img/human.jpeg" alt="Picture of a human">
+            <h4>Human</h4>
+            <p>In the reckonings of most worlds, humans are the youngest of the common races, late to arrive on the world scene and short-lived in comparison to dwarves, elves, and dragons. Perhaps it is because of their shorter lives that they strive to achieve as much as they can in the years they are given. Or maybe they feel they have something to prove to the elder races, and that's why they build their mighty empires on the foundation of conquest and trade. Whatever drives them, humans are the innovators, the achievers, and the pioneers of the worlds.</p>
+          </div>
+          <div id="elfLore">
+            <img src="img/elf.jpeg" alt="picture of an elf">
+            <h4>Elf</h4>
+            <p>Elves are a magical people of otherworldly grace, living in the world but not entirely part of it. they live in places of etheral beauty, in the midst of ancient forests or in silvery spires glittering with faerie light, where soft music drifts through the air and gentle fragrances waft on the breeze. Elves love nature and magic, art and artistry, music and poetry, and the good things of the world.</p>
+          </div>
+          <div id="dwarfLore">
+            <img src="img/dwarf.jpeg" alt="picture of a dwarf">
+            <h4>Dwarf</h4>
+            <p>Kingdoms rich in ancient grandeur, halls carved into the roots of mountains, the echoing of picks and hammers in deep mines and blazing forges, a commitment to clan and tradition, and a burning hatred of goblins and orcs--these common threads unite all dwarves.</p>
+          </div>
+          <div id="halflingLore">
+            <img src="img/halfling.jpeg" alt="picture of a halfling">
+            <h4>Halfling</h4>
+            <p>The comforts of home are the goals of most halflings' lives: a place to settle in peace and quiet, far from marauding monsters and clashing armies; a blazing fire and a generous meal; fine drink and fine conversation. Though some halflings live out their days in remote agricultural communities, others form nomadic bands that travel constantly, lured by the open road and the wide horizon to discover the wonders of new lands and people. But even these wanderers love peace, food, hearth, and home, though home might be a wagon jostling along an dirt road or a raft floating downriver.</p>
+          </div>
+          <div class="row">
+            <div id="rogue">
+              <h4>Rogue</h4>
+              <p>Rogues rely on skill, stealth, and their foes' vulnerabilities to get the upper hand in any situation. They have a knack for finding the solution to just about any problem, demonstrating a resourcefulness and versatility that is the cornerstone of any successful adventuring party.</p>
+            </div>
+            <div id="fighter">
+              <h4>Fighter</h4>
+              <p>Perhaps the most diverse class of characters in the worlds of Dungeons &amp; Dragons. Questing knights, conquering overlords, royal champions, elite foot soldiers, hardened mercenaries, and bandit kings--as fighters, they all share an unparalleled mastery with weapons and armor, and a thorough knowledge of the skills of combat. And they are well aquainted with death, both meting it out and staring it defiantly in the face.</p>
+            </div>
+            <div id="wizard">
+              <h4>Wizard</h4>
+              <p>Wizards are supreme magic-users, defined and united as a class by the spells they cast. Drawing on the subtle weave of magic that permeates the cosmos, wizards cast spells of explosive fire, arcing lightning, subtle deception, and brute-force mind control. Their magic conjures monsters from other planes, glimpses the future, or turns slain foes into zombies. Their mightiest spells change one substance into another, call meteors down from the sky, or open portals to other worlds.</p>
+            </div>
+            <div id="ranger">
+              <h4>Ranger</h4>
+              <p>Far from the bustle of cities and towns, past the hedges that shelter the most distant farms from the terrors of the wild, amid the dense-packed trees of trackless forests and across wide and empty plains, rangers keep their unending watch.</p>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="col-md">
+          <div id="confirmSkill">
+            <button type="button" name="skillConfirm">Confirm Skills</button>
+          </div>
+          <div id="rollButtons" class="card">
+            <div><input class="skillBox rogue stealth" type="checkbox" name="skills" value="stealth"> Stealth(Dex) <button class="stealthD20" type="button" name="button" value="20">D20</button></div>
+            <div><input class="skillBox rogue performance" type="checkbox" name="skills" value="performance"> Performance(Char) <button class="perfD20" type="button" name="button" value="20">D20</button></div>
+            <div><input class="skillBox rogue insight" type="checkbox" name="skills" value="insight"> Insight(Wis) <button class="insD20" type="button" name="button" value="20">D20</button></div>
+            <div><input class="skillBox wizard arcana" type="checkbox" name="skills" value="arcana"> Arcana(Int) <button class="arcD20" type="button" name="button" value="20">D20</button></div>
+            <div><input class="skillBox wizard medicine" type="checkbox" name="skills" value="medicine"> Medicine(Wis) <button class="medD20" type="button" name="button" value="20">D20</button></div>
+            <div><input class="skillBox wizard religion" type="checkbox" name="skills" value="religion"> Religion(Int) <button class="relD20" type="button" name="button" value="20">D20</button></div>
+            <div><input class="skillBox ranger investigation" type="checkbox" name="skills" value="investigation"> Investigation(Int) <button class="invD20" type="button" name="button" value="20">D20</button></div>
+            <div><input class="skillBox ranger nature" type="checkbox" name="skills" value="nature"> Nature(Int) <button class="natureD20" type="button" name="button" value="20">D20</button></div>
+            <div><input class="skillBox ranger survival" type="checkbox" name="skills" value="survival"> Survival(Wis) <button class="survD20" type="button" name="button" value="20">D20</button></div>
+            <div><input class="skillBox fighter athletics" type="checkbox" name="skills" value="athletics"> Athletics(Str) <button class="athD20" type="button" name="button" value="20">D20</button></div>
+            <div><input class="skillBox fighter intimidation" type="checkbox" name="skills" value="intimidation"> Intimidation(Char) <button class="intD20" type="button" name="button" value="20">D20</button></div>
+            <div><input class="skillBox fighter perception" type="checkbox" name="skills" value="perception"> Perception(Wis) <button class="percD20" type="button" name="button" value="20">D20</button></div>
+          </div>
+          <div class="card diceCard">
+            <div class="card-title dice-title">
+              <h6>Dice Roll</h6>
+            </div>
+            <div class="card-body dri">
+              <div class="row">
+                <div class="col-sm">
+                  <img src="img/right.png" id="rightDragon">
+                </div>
+                <div class="col-sm">
+                  <div class="card-text output">
+
+                  </div>
+                </div>
+                <div class="col-sm">
+                  <img src="img/left.png" id="leftDragon">
+                </div>
+              </div>
+              <div class="row">
+                <div class="modOutput">
+
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

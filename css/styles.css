@@ -1,0 +1,108 @@
+body {
+  background-image: url("../img/bgStone.jpg");
+}
+
+img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+.container-fluid{
+  max-width: 1300px;
+  min-width: 1300px;
+}
+.card {
+  padding: 10px;
+  border: solid black 3px;
+}
+.card-background{
+  background-size: cover;
+  background-position: center;
+  border-style: outset;
+  border-width: thick;
+  background-color: #e2cb76;
+
+}
+
+.story {
+  padding: 20px;
+  background-color: lightslategray;
+  background-color: rgba(119, 136, 153, 0.4);
+  color: gold;
+  font-family: fantasy;
+  text-shadow: -1px -2px #222;
+  align-content: center;
+  display: none;
+  border-radius: 20px;
+}
+
+.stat-box {
+  width: 110px;
+  background-image: url("../img/paper.jpg");
+}
+
+#humanLore, #dwarfLore, #elfLore, #halflingLore {
+  display: none;
+}
+
+#rogue, #fighter, #wizard, #ranger {
+  display: none;
+}
+
+#rollButtons  button{
+  float: right;
+  display: none;
+}
+
+
+#rollButtons{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  line-height: 50px;
+  background-image: url("../img/paper.jpg");
+}
+
+#leftDragon, #rightDragon {
+  height: 80px;
+  width: 60px;
+
+}
+
+.dice-title {
+  text-align: center;
+}
+.diceCard{
+  background-color: silver;
+}
+.output {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+.modOutput{
+  padding-left: 40%;
+}
+.dri {
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+.points {
+  margin-left: 20px;
+  height: 25px;
+  width: 25px;
+}
+#race-select{
+  background-color: black;
+  color: white;
+}
+#class-select{
+  background-color: black;
+  color: white;
+}
+#statConfirm {
+  float: left;
+  width: 100px;
+}
