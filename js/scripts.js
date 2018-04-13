@@ -520,6 +520,7 @@ $(document).ready(function(){
     if(player1.playerClass.includes("rogue")){
       $(".rogue").show();
       $("#rogue").show();
+      debugger;
       $(".card-background").css('background-image', "url(../gh-pager/img/tunnel.jpeg)");
     } else if(player1.playerClass.includes("wizard")){
       $(".wizard").show();
