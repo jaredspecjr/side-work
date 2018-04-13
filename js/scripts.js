@@ -520,19 +520,19 @@ $(document).ready(function(){
     if(player1.playerClass.includes("rogue")){
       $(".rogue").show();
       $("#rogue").show();
-      $(".card-background").css('background-image', "url(../intro-group-week/img/tunnel.jpeg)");
+      $(".card-background").css('background-image', "url(../gh-pager/img/tunnel.jpeg)");
     } else if(player1.playerClass.includes("wizard")){
       $(".wizard").show();
       $("#wizard").show();
-      $(".card-background").css('background-image', "url(../intro-group-week/img/library.jpeg)");
+      $(".card-background").css('background-image', "url(../gh-pager/img/library.jpeg)");
     } else if(player1.playerClass.includes("fighter")){
       $(".fighter").show();
       $("#fighter").show();
-      $(".card-background").css('background-image', "url(../intro-group-week/img/colosseum.jpeg)");
+      $(".card-background").css('background-image', "url(../gh-pager/img/colosseum.jpeg)");
     } else if(player1.playerClass.includes("ranger")){
       $(".ranger").show();
       $("#ranger").show();
-      $(".card-background").css('background-image', "url(../intro-group-week/img/forest.jpeg)");
+      $(".card-background").css('background-image', "url(../gh-pager/img/forest.jpeg)");
 
     }
 
